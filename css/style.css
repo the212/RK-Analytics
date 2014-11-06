@@ -166,3 +166,12 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+
+
+/********* ANALYTICS CSS *************/
+.navbar-brand {
+  color:#FFF !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
