@@ -24,17 +24,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style="color:#FFF;">REED KRAKOFF - ANALYTICS</a>
+          <a class="navbar-brand" href="#" style="color:#FFF;">REED KRAKOFF -- ANALYTICS</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse"> 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
+            <li style="padding-right:10px; padding-top:7px;"><button type="button" class="btn btn-primary" onClick="window.location.reload()"><span class="glyphicon glyphicon-refresh"> Refresh</button></li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
         </div>
       </div>
     </nav>
@@ -56,64 +53,40 @@
           <h1 class="page-header">"View In Store" Appointments</h1>
 
            <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+            <div class="col-xs-12 col-sm-6 placeholder">
+              <h4>Appointments</h4>
+              <span class="text-muted">Total # to date</span>
+              <div id="total_appointments"></div>
             </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
+            <div class="col-xs-12 col-sm-6 placeholder">
+              <h4>Stylist Requests This Week</h4>
+              <span class="text-muted"># this week</span>
+              <div id="total_appointments"></div>
             </div>
           </div>
 
-          <h2 class="sub-header">Section title</h2>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                  <th>Header</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1,001</td>
-                  <td>Lorem</td>
-                  <td>ipsum</td>
-                  <td>dolor</td>
-                  <td>sit</td>
-                </tr>
-                <tr>
-                  <td>1,002</td>
-                  <td>amet</td>
-                  <td>consectetur</td>
-                  <td>adipiscing</td>
-                  <td>elit</td>
-                </tr>
-                <tr>
-                  <td>1,003</td>
-                  <td>Integer</td>
-                  <td>nec</td>
-                  <td>odio</td>
-                  <td>Praesent</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="row placeholders">
+            <div class="col-xs-12 col-sm-6 placeholder">
+              <h4>Appointment Days</h4>
+              <span class="text-muted">Days of the week</span>
+              <div id="appoinment_days"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 placeholder">
+              <h4>Appointment Times</h4>
+              <span class="text-muted">Time slots in single day</span>
+              <div id="appoinment_times"></div>
+            </div>
+          </div>
+
+          <div class="row placeholders">
+            <div class="col-xs-12 col-sm-6 placeholder">
+              <h4>Appointment Products</h4>
+              <span class="text-muted">Product customer wants to see "In Store"</span>
+              <div id="appoinment_products"></div>
+            </div>
+            <div class="col-xs-12 col-sm-6 placeholder">
+              
+            </div>
           </div>
 
         </div> <!-- end main -->

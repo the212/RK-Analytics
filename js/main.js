@@ -6,6 +6,8 @@ $(function() {
 	  readKey: "264eab35364a3a8158c6a27f7b2272880cd58daef4dea0ae81a15b9c11fcc993a5faf3efd320d77970281889c78bd6659c44636250d7cdabd3f2a017c1a75c99583bc5e9d591da6e73395c4c44466e45bb1a2a469fa2be34eeae9b3f0089628da6fdeb203b9e9145778623d0d9632b91"
 	});
 
+ 	/**********************************
+ 	********** Ask A Stylist ***************/
 	Keen.ready(function(){
 	  var query = new Keen.Query("count", {
 	    eventCollection: "ask_stylist_submit"
@@ -41,6 +43,58 @@ $(function() {
 	    groupBy: "time"
 	  });
 	  client.draw(query, document.getElementById("time"), {
+	    // Custom configuration here
+	  });
+	});
+
+	Keen.ready(function(){
+	  var query = new Keen.Query("count", {
+	    eventCollection: "ask_stylist_submit",
+	    groupBy: "day_sent"
+	  });
+	  client.draw(query, document.getElementById("day_sent"), {
+	    // Custom configuration here
+	  });
+	});
+
+	/********** END Ask a Stylist *****************
+	***********************************************/
+
+	Keen.ready(function(){
+	  var query = new Keen.Query("count", {
+	    eventCollection: "set_appointment_request"
+	  });
+	  client.draw(query, document.getElementById("total_appointments"), {
+	    // Custom configuration here
+	  });
+	});
+
+	Keen.ready(function(){
+	  var query = new Keen.Query("count", {
+	    eventCollection: "set_appointment_request",
+	    groupBy: "time"
+	  });
+	  client.draw(query, document.getElementById("appoinment_times"), {
+	    // Custom configuration here
+	  });
+	});
+
+	Keen.ready(function(){
+	  var query = new Keen.Query("count", {
+	    eventCollection: "set_appointment_request",
+	    groupBy: "day"
+	  });
+	  client.draw(query, document.getElementById("appoinment_days"), {
+	    // Custom configuration here
+	  });
+	});
+
+	Keen.ready(function(){
+	  var query = new Keen.Query("count", {
+	    eventCollection: "set_appointment_request",
+	    groupBy: "product"
+	  });
+	  client.draw(query, document.getElementById("appoinment_products"), {
 	    // Custom configuration here
 	  });
 	});
