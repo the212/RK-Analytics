@@ -175,3 +175,8 @@ body {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+.page-header {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
